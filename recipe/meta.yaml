@@ -1,5 +1,5 @@
 {% set name = "fps-noauth" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_noauth-{{ version }}.tar.gz
-  sha256: 9d01c723f6a9aa065410a7106503803446132bab617d53e1ad86bbc25797c1b6
+  sha256: 7e0b8d008c459ce200e138ddc1afff58673a7fe929a97b76a57cc03a647df368
 
 build:
   noarch: python
