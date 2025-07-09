@@ -1,5 +1,5 @@
 {% set name = "fps-noauth" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_noauth-{{ version }}.tar.gz
-  sha256: d0afe18430c1043f33f72aa611bb516c5568bc76987469fe134226dd5eb125bf
+  sha256: cfc1da14a485400fe28e8166a995c8bea96ea24201adfa29361030e67e1abf39
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.9.0,<0.10.0
+    - jupyverse-api >=0.10.0,<0.11.0
 
 test:
   requires:
