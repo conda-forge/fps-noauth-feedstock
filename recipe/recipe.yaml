@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.8"
+  version: "0.10.0"
 
 package:
   name: fps-noauth
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-noauth/fps_noauth-${{ version }}.tar.gz
-    sha256: 476bca4c9c5020e16e49ee1f30f1f1ed828bcfdda14809f4ae581974f1f1cda1
+    sha256: 101ec797f1944d00bee9e7c5d7213568df9056ec42d1c56d9ba545c092cdfbcb
 
 build:
   noarch: python
