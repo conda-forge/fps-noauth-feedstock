@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.8"
+  version: "0.10.1"
 
 package:
   name: fps-noauth
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-noauth/fps_noauth-${{ version }}.tar.gz
-    sha256: 476bca4c9c5020e16e49ee1f30f1f1ed828bcfdda14809f4ae581974f1f1cda1
+    sha256: 0576d3fe0ac320b42dbee49c515103f0e20622ce8e5e14427670c52783d08474
 
 build:
   noarch: python
@@ -24,7 +24,9 @@ requirements:
     - uv-build
   run:
     - python >=${{ python_min }}
-    - jupyverse-api >=0.14.0,<0.15.0
+    - fastapi-core
+    - fps
+    - jupyverse-auth >=0.2.0,<0.3.0
 
 tests:
   - python:
